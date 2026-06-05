@@ -20,6 +20,8 @@ const uploadOnCloudinary = async = (localFilePath) => {
         return response;
 
     } catch (error) {
-        fs.unlinkSync(localFilePath) // files removed from the server that are stored tempriroly
+        fs.unlinkSync(localFilePath) // files removed from the server that are stored temprery
     }
 }
+
+export {uploadOnCloudinary}
